@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Animated Container',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -23,7 +23,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  var _color=Colors.pinkAccent;
+  var _color=Colors.pink[200];
   var _height=50.0;
   var _width=40.0;
 
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Text("Flutter is easy to learn",textAlign:TextAlign.center,
             style:TextStyle(color:Colors.black,fontWeight: FontWeight.bold,fontSize: 18),),
          Padding(padding: const EdgeInsets.only(top: 70),),
-          Text("For more Flutter Widgets examples,follow singhteekam",textAlign:TextAlign.center,
+          Text("For more Flutter Widgets examples,follow singhteekam on GitHub",textAlign:TextAlign.center,
             style:TextStyle(color:Colors.red,fontWeight: FontWeight.bold,fontSize: 18),),
          Padding(padding: const EdgeInsets.only(top: 20),),
         ],)
